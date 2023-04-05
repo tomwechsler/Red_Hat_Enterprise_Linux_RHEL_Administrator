@@ -1,1 +1,0 @@
-vagrant init generic/rhel8
