@@ -1,8 +1,14 @@
-mkdir –p vagrant/rhel ; cd vagrant/rhel 
+mkdir -p vagrant/rhel
+
+cd vagrant/rhel 
+
 vagrant init generic/rhel9 
+
 vagrant up
+
 vagrant ssh
-sudo subscription-manager register --username <your-acc>\ --password <your-password> --auto-attach
+
+sudo subscription-manager register --username <your-acc> --password <your-password> --auto-attach
 
 
 
