@@ -1,3 +1,5 @@
+#Working on the rhel system
+
 pwd
 
 ls
@@ -6,27 +8,47 @@ ls -la
 
 touch file1
 
+ls
+
 file file1
 
+echo hello
+
+#Content is overwritten
+echo hello > file1
+echo hello > file1
 echo hello > file1
 
-file file1
+#To append
+echo hello >> file1
 
-ls -l /etc/hosts
-ls -l /etc/Hosts
-ls -l /etc/Hosts /etc/hosts
+cat file1
 
-ls -l /etc/hosts > output 
-ls -l /etc/Hosts /etc/hosts >> output 
+ls /etc/hosts
+ls /etc/Hosts
 
-ls -l /etc/Hosts 2> error
+#Does not work
+ls /etc/Hosts >> file1
 
-ls -l /etc/hosts /etc/Hosts &> log
+#Redirect errors
+ls /etc/Hosts 2> error
 
+cat error
+
+ls /etc/hosts /etc/Hosts
+
+ls /etc/Hosts /etc/hosts &> combined
+
+cat combined
+
+#Working with HEREDOCS
 cat > story.txt <<END
 line 1
 line 2
 END
+
+cat story.txt
+
 
 
 The command touch can be used to create an empty file. We can also create 

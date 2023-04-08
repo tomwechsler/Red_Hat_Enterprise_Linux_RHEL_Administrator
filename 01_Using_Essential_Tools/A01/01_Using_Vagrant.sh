@@ -8,7 +8,7 @@ vagrant up
 
 vagrant ssh
 
-sudo subscription-manager register --username <your-acc>\ --password <your-password> --auto-attach
+sudo subscription-manager register --username <your-acc> --password <your-password> --auto-attach
 
 
 
