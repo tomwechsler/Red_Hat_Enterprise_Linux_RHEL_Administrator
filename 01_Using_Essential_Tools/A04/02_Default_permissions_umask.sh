@@ -1,18 +1,31 @@
 #Working on the rhel system
 
-touch file_perms
+cat octal.txt
 
-ls -l file_perms 
+umask
+
+umask 0
+
+touch file10
+
+ls -l file10
+
+mkdir demo1
+
+ls -ld demo1
+
+umask 077
+
+umask
+
+touch file20
+
+ls -l file20
 
 chmod -v 666 file_perms # or
 
 chmod -v o+w file_perms
 
+mkdir demo2
 
-
-
-
-
-The command chmod, change mode, is used to adjust the file permissions. Using
-the option -v we are able to display both the current and newly assigned
-permissions. We can use either binary or symbolic notation.
+ls -ld demo2

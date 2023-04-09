@@ -1,13 +1,26 @@
 #Working on the rhel system
 
+ls
+
+ls -l
+
 ls -l /etc/hosts
+
+ls -l error
+
+ls -ld test
 
 ls -l /etc/shadow
 
-stat /etc/hosts
+stat error
 
-stat -c %a /etc/hosts
+stat -c %a error
 
+stat -c %A error
+
+tty
+
+tty -l $(tty)
 
 
 
