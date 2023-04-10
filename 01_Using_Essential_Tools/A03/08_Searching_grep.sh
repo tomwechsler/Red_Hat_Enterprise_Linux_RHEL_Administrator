@@ -8,7 +8,7 @@ grep bash /etc/passwd
 
 grep bash$ /etc/passwd
 
-sudo grep Password /ect/ssh/sshd_config
+sudo grep Password /etc/ssh/sshd_config
 
 sudo grep ^Password /etc/ssh/sshd_config
 
