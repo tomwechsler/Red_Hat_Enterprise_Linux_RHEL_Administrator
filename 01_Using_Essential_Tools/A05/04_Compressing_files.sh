@@ -15,3 +15,26 @@ time gzip etc.tar
 
 ls -lh
 
+gunzip etc.tar.gz
+
+ls -lh
+
+time bzip2 etc.tar
+
+ls -lh
+
+bunzip2 etc.tar.bz2
+
+ls -lh
+
+sudo rm -rf etc.tar
+
+sudo tar -czf etc.tar.gz /etc
+
+ls -lh
+
+tar -xf etc.tar.gz
+
+cd etc
+
+ls
