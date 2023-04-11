@@ -20,7 +20,7 @@ stat -c %A error
 
 tty
 
-tty -l $(tty)
+ls -l $(tty)
 
 
 
