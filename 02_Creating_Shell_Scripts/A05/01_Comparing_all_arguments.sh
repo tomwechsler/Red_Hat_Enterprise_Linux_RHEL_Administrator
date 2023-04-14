@@ -10,7 +10,7 @@ elif getent passwd "$1" ; then
   echo "The user $1 already is on the system"
   exit 2
 fi
-read -s -p "Enter a new password for the user $1: " USER_PASSWORD
+#read -s -p "Enter a new password for the user $1: " USER_PASSWORD
 #sudo useradd -m "$1"
 #echo "$USER_PASSWORD" | sudo passwd --stdin "$1"
 #getent passwd "$1"
