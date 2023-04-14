@@ -28,4 +28,4 @@ which my.sh
 We can run scripts with the bash command: bash my.sh
 To run directly we must set the x bit: chmod a+x my.sh
 The PATH variable describes which directories are searched for programms.
-RHEL includes ~/bin => mdir bin && mv my.sh ~/bin
+RHEL includes ~/bin => mkdir bin && mv my.sh ~/bin
