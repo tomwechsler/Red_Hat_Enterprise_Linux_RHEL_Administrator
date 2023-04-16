@@ -7,11 +7,23 @@ shutdown --help
 -r:      Reboot system 
 -c:      Cancel
 
-sudo shutdown +20 "Shutting down in 20" 
+man shutdown
 
-sudo shutdown 17:00 "System going down at 5 pm" 
+#We need privileges
+shutdown -h +20 "by by folks" 
 
-sudo shutdown now "System going down"
+sudo !!
+
+sudo shutdown -c
+
+sudo shutdown -r 17:00 "System going down at 5 pm" 
+
+sudo shutdown -c 
+
+#But does it really works?
+sudo shutdown -h +1
+
+vagrant up rhel
 
 
 
