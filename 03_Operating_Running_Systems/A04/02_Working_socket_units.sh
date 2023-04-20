@@ -1,6 +1,6 @@
 #Working on the rhel system
 
-sudo yum install -y cockpit
+sudo dnf install -y cockpit
 
 sudo systemctl enable --now cockpit.socket
 

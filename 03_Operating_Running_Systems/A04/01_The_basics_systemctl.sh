@@ -4,16 +4,16 @@
 ps -f -p 1
 
 
-sudo dnf install -y at
+sudo dnf install -y atd
 
-sudo systemctl status at
+sudo systemctl status atd
 
-sudo systemctl enable at
+sudo systemctl enable atd
 
-sudo systemctl start at
+sudo systemctl start atd
 
 #Much better all in one
-sudo systemctl enable --now at
+sudo systemctl enable --now atd
 
 #Shell trick
 ^enable^status
@@ -31,10 +31,10 @@ sudo systemctl disable --now chronyd
 
 sudo systemctl enable --now chronyd
 
-sudo systemctl disable --now at chronyd
+sudo systemctl disable --now atd chronyd
 
 #Both together
-sudo systemctl enable --now chrnoyd at
+sudo systemctl enable --now chronyd atd
 
 
 
