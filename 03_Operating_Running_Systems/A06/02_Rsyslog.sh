@@ -1,4 +1,4 @@
-#Working on alma
+#Working on rhel
 
 #Check the config file
 less /etc/rsyslog.conf

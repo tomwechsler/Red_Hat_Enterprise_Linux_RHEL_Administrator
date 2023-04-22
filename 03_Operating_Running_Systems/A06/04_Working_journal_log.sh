@@ -1,4 +1,4 @@
-#Working on alma
+#Working on rhel
 
 #Investigate journalctl
 sudo journalctl

@@ -1,4 +1,4 @@
-#Working on alma
+#Working on rhel
 
 #Our log file
 ls -l /var/log/my.log
@@ -40,7 +40,7 @@ sudo vim /etc/logrotate.d/my
 #Save and exit
 
 #Logrotate
-sudo logrotate /etc/logrotate.d.conf
+sudo logrotate /etc/logrotate.conf
 
 #Lets check
 ls -l /var/log/my*

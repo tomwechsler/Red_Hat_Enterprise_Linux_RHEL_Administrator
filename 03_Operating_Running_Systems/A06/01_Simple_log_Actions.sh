@@ -1,4 +1,4 @@
-#Working on alma
+#Working on rhel
 
 #Check for all services
 systemctl status
@@ -18,7 +18,7 @@ sudo tail -n4 /var/log/messages
 sudo journalctl -f
 
 #OPEN A NEW TERMINAL
-vagrant ssh alma1
+vagrant ssh rhel
 
 #Create a log entry
 logger -p local0.warning "help"
