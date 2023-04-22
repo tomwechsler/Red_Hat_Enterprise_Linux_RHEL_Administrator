@@ -40,6 +40,8 @@ kill -l
 
 tuned-adm active 
 
+tuned-adm active verify
+
 tuned-adm recommend
 
 tuned-adm list
