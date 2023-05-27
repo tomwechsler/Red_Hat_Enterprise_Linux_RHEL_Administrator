@@ -28,16 +28,3 @@ chmod -vR a+w upper
 
 
 
-The command chmod, change mode, is used to adjust the file permissions. Using
-the option -v we are able to display both the current and newly assigned
-permissions. We can use either binary or symbolic notation.
-
-Often, it is incorrectly thought that symbolic permissions are simpler and only
-used when you start your administration career. This is far from the case as we
-see with -X. The upper-case X is used to set execute only of directories of files
-where execute is already set in one or more objects.
-
-Another misunderstanding the difference between:
-chmod +x file and
-chmod a+x file omitting the object, chmod applied permissions allowed via the
-umask. Using -a explicitly, permissions are assigned regardless of the umask.

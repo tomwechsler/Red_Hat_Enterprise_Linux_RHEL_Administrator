@@ -54,6 +54,3 @@ sudo tuned-adm profile virtual-guest
 
 
 
-
-We have tuning profiles in RHEL and these can be used to
-established pre-set optimizations.

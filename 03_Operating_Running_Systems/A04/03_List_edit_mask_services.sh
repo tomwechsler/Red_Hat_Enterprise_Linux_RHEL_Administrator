@@ -31,13 +31,3 @@ sudo systemctl mask --now atd
 sudo systemctl start atd
 
 
-The cat sub-command is useful both to list the file content and the file location.
-
-We also have an edit sub-command that is used to make changes. The path
-changes to the /etc structure as we make a minor change to the description.
-
-Masking a unit file prevents it starting automatically or manually while it is 
-masked. This is achieved by creating a symlink inside the /etc/systemd/system
-structure pointing to /dev/null.
-
-We need to remove any of our customizations first and reload systemd.

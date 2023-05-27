@@ -19,5 +19,3 @@ less /etc/services
 
 
 
-
-To read from text files we can use a variety of tools.

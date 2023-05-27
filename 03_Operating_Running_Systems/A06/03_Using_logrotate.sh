@@ -50,7 +50,3 @@ man 5 logrotate.conf
 
 
 
-The command logrotate is used to maintain the size of the /var/log structure. 
-It is scheduled to run via the cron daemon. It also can be run manually which is
-especially useful in testing. The configuration file is /etc/logrotate.conf or 
-the extension directory.

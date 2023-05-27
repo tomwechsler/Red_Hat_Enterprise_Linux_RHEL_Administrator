@@ -18,6 +18,3 @@ ping cloudflare
 tail -n 1 /etc/hosts
 
 
-
-Using the command tee output is sent both the console and the file. As a
-command it can be elevated with sudo.

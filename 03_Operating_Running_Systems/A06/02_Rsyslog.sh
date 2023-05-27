@@ -34,6 +34,3 @@ sudo tail /var/log/messages
 
 
 
-
-Facilities, (services) and priorities, (log levels) can be viewed in the syslog
-programmers man page for syslog.

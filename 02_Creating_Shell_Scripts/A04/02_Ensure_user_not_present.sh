@@ -25,8 +25,3 @@ createuser.sh
 echo $?
 
 
-
-Testing a command does not need the [] brackets. We check the exit status of
-the command for success or failure. If getent succeeds the user account is
-already on the system and we should exit the script. Using a different errot code
-allows for better debugging.

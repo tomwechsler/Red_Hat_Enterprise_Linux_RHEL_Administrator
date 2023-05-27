@@ -25,12 +25,3 @@ ls -l ports
 cat ports
 
 
-The hard link count of a new directory will always be 2. The name of the
-directory and the directory new_dir/. is linked to the same metadata. The option
--i can be used to show the inode or directory entry. Creating subdirectories will
-increase the hard link-count. In the example the extra link is new_dir/dir1/.. which
-is the same entry as new_die and new_dir/.
-
-Hard links are just extra names linked to the same metadata. On the other hand, 
-soft links are a special file type that links to the destination file. This is a
-completely new file that is used as a link to the target.

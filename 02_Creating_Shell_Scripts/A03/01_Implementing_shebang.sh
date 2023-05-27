@@ -42,9 +42,3 @@ nano my.sh
 
 
 
-
-A script is a text file with the same operators and commands that can be used at
-the command line. The first line of the script identifies the script interpreter to
-use. If it is not present the script will run with the current shell as the interpreter.
-The special first line or shebang can also identify the file type to the system 
-helping with syntax highlighting is editors.

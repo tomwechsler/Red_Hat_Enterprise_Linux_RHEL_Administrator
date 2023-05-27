@@ -32,7 +32,3 @@ sudo nano /etc/hosts
 
 
 
-
-A minimal installation of RHEL does not necessarily add the nano editor or the
-full vim editor. You need to make sure your system is registered with Red Hat to
-install software.

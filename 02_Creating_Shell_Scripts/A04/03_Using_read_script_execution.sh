@@ -20,12 +20,3 @@ createuser.sh fred
 createuser.sh fred P@ssw0rd
 
 
-
-The read command can be used to prompt for input during the script execution.
-
-
-In RHEL the passwd command is able to script password creation without user
-interaction. Other distributions such as Ubuntu require the using chpasswd.
-
-RHEL: echo "$USER_PASSWORD" | sudo passwd "$1" --stdin
-All Linux Distributions: echo "$1:$USER_PASSWORD" | sudo chpasswd

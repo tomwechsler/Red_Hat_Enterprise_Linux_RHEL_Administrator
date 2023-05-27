@@ -37,13 +37,3 @@ renice 19 9781
 renice 10 9781
 
 
-The command ps with the option -l lists both the nice value and priority of a
-process.
-
-The command nice can be used to adjust the starting nice value, affecting the
-allocated priority. Standard users cannot set negative nice values meaning, they
-can only assign processes with a lower priority than would be assigned by
-default.
-
-The renice command can be run against existing processes. Standard users
-cannot set lower nice values than currently assigned.

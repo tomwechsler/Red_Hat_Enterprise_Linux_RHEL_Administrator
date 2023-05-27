@@ -38,8 +38,3 @@ ss -ntl
 ip a sh
 
 
-In systemd targets replace runlevels that were previously used in SysV Init from
-RHEL 6 and earlier. The default link is used to point to the correct target. A
-target is a group service that should start automatically.
-
-To boot to a non-default target, use the GRUB boot editor as seen earlier.

@@ -36,12 +36,3 @@ sudo journalctl -b 0
 #If we would have more files
 sudo journalctl -b -1
 
-
-
-Journalctl ships as part of the systemd eco-system and becomes an extremely
-useful tool with many practical options.
-
-The journal logs are stored in memory and may not persists as disk files. The
-default setting will persist the log if the directory /var/log/journal exists. To
-ensure journals are persisted we can change this to "persistent". To ensure they
-are not persisted the setting is "volatile".

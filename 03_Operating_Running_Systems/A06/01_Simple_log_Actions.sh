@@ -31,11 +31,3 @@ sudo tail -n0 -f /var/log/messages
 #Exit on the second terminal
 exit
 
-
-The directory /var/log contain many log files. Most messages are logged to
-/var/log/messages but not all.
-
-
-The command logger can be used to create log messages. Here the facility used
-is local0 and the priority is info. This can be useful to test logging and also in
-scripts.

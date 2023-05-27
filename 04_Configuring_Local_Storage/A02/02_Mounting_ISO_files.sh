@@ -17,6 +17,3 @@ modinfo loop
 man 4 loop
 
 
-
-Loop devices have files as the backend storage in place of physical storage. One
-way of using them is to access ISO files.

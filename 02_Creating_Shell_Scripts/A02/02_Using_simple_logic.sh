@@ -60,5 +60,3 @@ cd mkt 2>/dev/null || { mkdir mkt && cd mkt; }
 pwd
 
 
-Applications, including scripts and commands will issue exit codes on
-completion. The variable $? can be read to determine success or failure.

@@ -34,6 +34,3 @@ rm -i files?
 
 
 
-We have seen before that the command touch can be used to create a new
-empty file. Using a range in the fielname we can create multiple files. We can
-then use the * and ? to demonstrate file globbing.

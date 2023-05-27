@@ -32,9 +32,3 @@ sudo userdel -r u99
 
 
 
-It is possible that the USER_PASSWORD variable is set to any empty string. Just
-hitting the enter key at the password prompt will cause this. Using the test -n we
-check a value is set. A while loop can help with this, this example will keep
-looping until we have set a value. The use of the ! means while NOT.
-
--n: testing for non-zero values

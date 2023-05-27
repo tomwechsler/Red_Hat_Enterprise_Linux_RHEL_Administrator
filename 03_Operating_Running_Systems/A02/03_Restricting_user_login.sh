@@ -29,7 +29,3 @@ exit
 
 
 
-Creating the file /etc/nologin standard users are restricted from logging into the
-system. Using the shutdown command, standard users are restricted from login
-when less than 5 minutes remain before the event. This is controlled via
-/run/nologin.
