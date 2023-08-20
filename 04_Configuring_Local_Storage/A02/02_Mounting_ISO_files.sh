@@ -1,5 +1,7 @@
 #Working on rhel
 
+lsblk
+
 wget https://download.virtualbox.org/virtualbox/6.0.0/VBoxGuestAdditions_6.0.0.iso
 
 sudo losetup -f VBoxGuestAdditions_6.0.0.iso 
