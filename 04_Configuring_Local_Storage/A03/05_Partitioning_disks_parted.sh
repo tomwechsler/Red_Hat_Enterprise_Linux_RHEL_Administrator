@@ -1,0 +1,1 @@
+sudo parted /dev/loop1 mklabel msdos mkpart primary 0% 25% 
