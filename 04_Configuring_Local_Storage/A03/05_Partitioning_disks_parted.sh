@@ -4,6 +4,8 @@ sudo parted /dev/loop1 print
 sudo parted /dev/loop1 mklabel msdos
 
 #Create a new partition
-sudo parted /dev/loop1 mklabel msdos mkpart primary 0% 25%
+sudo parted /dev/loop1 mkpart primary 0% 25%
 
 sudo parted /dev/loop1 print
+
+lsblk
