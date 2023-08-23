@@ -10,9 +10,9 @@ sudo losetup -f /var/disks/disk1
 
 lsblk
 
-sudo parted /dev/loop0
+sudo partprobe /dev/loop0
 
-sudo mount UUID=0b2e2e8e-0c0d-4c4d-8b0b-2a7f0e7d9d7b /data
+sudo mount UUID=8a3f1d99-bcf2-42bd-b96a-8cefae231ab8 /data
 
 mount -t XFS
 
@@ -28,4 +28,4 @@ sudo reboot
 
 lsblk
 
-sudo mount UUID=0b2e2e8e-0c0d-4c4d-8b0b-2a7f0e7d9d7b /data
+sudo mount UUID=8a3f1d99-bcf2-42bd-b96a-8cefae231ab8 /data
