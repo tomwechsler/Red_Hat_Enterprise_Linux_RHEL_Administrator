@@ -1,3 +1,5 @@
+#Working on the rhel system
+
 sudo dd if=/dev/urandom of=/dev/sdb2 bs=1k seek=10 count=4k
 
 lsblk
