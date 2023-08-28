@@ -7,7 +7,7 @@ pvcreate /dev/loop1p2
 
 pvs
 
-vgcreate -v  vg1/dev/loop1p2
+vgcreate -v vg1 /dev/loop1p2
 
 vgdisplay vg1
 
@@ -19,7 +19,7 @@ pvcreate --TABTAB /dev/loop1p2
 
 pvcreate --pvmetadatacopies 2 /dev/loop1p2
 
-vgcreate -v  vg1/dev/loop1p2
+vgcreate -v vg1 /dev/loop1p2
 
 vgdisplay vg1
 
