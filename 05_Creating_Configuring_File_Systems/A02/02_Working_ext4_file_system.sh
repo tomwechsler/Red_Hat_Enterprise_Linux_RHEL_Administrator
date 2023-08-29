@@ -13,20 +13,20 @@ lsblk
 
 sudo -i
 
-mkfs.ext4 /dev/sdb
+mkfs.ext4 /dev/sda
 
-dump2fs /dev/sdb
+dump2fs /dev/sda
 
-dump2fs /dev/sdb | grep count
+dump2fs /dev/sda | grep count
 
-dump2fs /dev/sdb | grep -i "mount count"
+dump2fs /dev/sda | grep -i "mount count"
 
-dump2fs /dev/sdb | grep interval
+dump2fs /dev/sda | grep interval
 
-dump2fs /dev/sdb | grep -i last
+dump2fs /dev/sda | grep -i last
 
-tune2fs -L "SALES" /dev/sdb
+tune2fs -L "SALES" /dev/sda
 
-tune2fs -l /dev/sdb
+tune2fs -l /dev/sda
 
-tune2fs -l /dev/sdb | grep -i volume
+tune2fs -l /dev/sda | grep -i volume
