@@ -15,15 +15,17 @@ sudo -i
 
 mkfs.ext4 /dev/sda
 
-dump2fs /dev/sda
+dumpe2fs /dev/sda
 
-dump2fs /dev/sda | grep count
+dumpe2fs /dev/sda | grep count
 
-dump2fs /dev/sda | grep -i "mount count"
+#The value -1 means disabled
+dumpe2fs /dev/sda | grep -i "mount count"
 
-dump2fs /dev/sda | grep interval
+#The value 0 means disabled
+dumpe2fs /dev/sda | grep interval
 
-dump2fs /dev/sda | grep -i last
+dumpe2fs /dev/sda | grep -i last
 
 tune2fs -L "SALES" /dev/sda
 
