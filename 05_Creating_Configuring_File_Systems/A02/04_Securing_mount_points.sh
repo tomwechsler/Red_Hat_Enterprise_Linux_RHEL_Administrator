@@ -2,47 +2,47 @@
 
 sudo -i
 
-mkdir -p /data/sales
+mkdir -p /my/sales
 
-chmod -v 707 /data/sales
+chmod -v 707 /my/sales
 
-cd /data/sales
+cd /my/sales
 
 #Leave the root shell
 exit
 
-cd /data/sales
+cd /my/sales
 
 cd
 
 sudo -i
 
-chmod -v 700 /data/sales
+chmod -v 700 /my/sales
 
-mount /dev/sda /data/sales
+mount /dev/sda /my/sales
 
-chmod -v 707 /data/sales
+chmod -v 707 /my/sales
 
 #Leave the root shell
 exit
 
-cd /data/sales
+cd /my/sales
 
 cd
 
-sudo umount /data/sales
+sudo umount /my/sales
 
 #Permission denied
-cd /data/sales
+cd /my/sales
 
-sudo mount /dev/sda /data/sales
+sudo mount /dev/sda /my/sales
 
-cd /data/sales
+cd /my/sales
 
 #Copy the UUID of the /dev/sda
 sudo blkid /dev/sda
 
 sudo vim /etc/fstab
 #Add the following line to the /etc/fstab file
-#UUID=0a0a0a0a-0a0a-0a0a-0a0a-0a0a0a0a0a0a /data/sales ext4 defaults 0 0
+#UUID=0a0a0a0a-0a0a-0a0a-0a0a-0a0a0a0a0a0a /my/sales ext4 defaults 0 0
 #Save and exit
