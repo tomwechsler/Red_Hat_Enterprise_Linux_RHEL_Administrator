@@ -23,8 +23,6 @@ nfsconf --set nfsd vers3 n
 #Check the configuration
 vim /etc/nfs.conf
 
-nfsconf --show
-
 sudo systemctl enable --now nfs-server
 
 ss -ntl
