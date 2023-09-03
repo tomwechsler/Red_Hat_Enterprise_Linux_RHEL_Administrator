@@ -1,6 +1,6 @@
 #Working on the rhel system
 
-cd /admin
+sudo chmod -v 1770 /admin
 
 ls -ld /admin
 
@@ -31,7 +31,7 @@ sudo -i
 
 umask 007
 
-touch /admin/roo2
+touch /admin/root2
 
 exit
 

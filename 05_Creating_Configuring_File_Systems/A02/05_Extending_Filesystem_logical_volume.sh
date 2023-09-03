@@ -6,11 +6,11 @@ vgs
 
 df -h /
 
-vgeextend rhel_rhel /dev/sdc
+vgeextend rhel /dev/sdc
 
-vgs rhel_rhel
+vgs rhel
 
-lvextend -r -l +100%FREE rhel_rhel/root
+lvextend -r -l +100%FREE rhel/root
 
 df -h /
 
