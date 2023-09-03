@@ -6,8 +6,8 @@ dnf install stratisd stratis-cli
 
 systemctl enable --now stratisd
 
-stratis pool create pool1 /dev/sdd
+lsblk
 
-stratis pool add-data pool1 /dev/sdX
+stratis pool create pool1 /dev/sdd
 
 stratis pool list
