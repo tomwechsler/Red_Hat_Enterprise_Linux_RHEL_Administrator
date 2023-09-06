@@ -24,7 +24,17 @@ touch file24
 cd
 
 #Configure SELinux
-ls -ldZ /data /files
+ls -ldZ /my/data /my/files
+
+dnf install policycoreutils-devel
+
+sepolicy manpage -d nfsd_t -p /usr/share/man/man8
+
+mandb
+
+apropos _selinux
+
+man 8 nfsd_selinux
 
 semanage fcontext -a -t public_content_rw_t "/my/data(/.*)?"
 semanage fcontext -a -t public_content_rw_t "/my/files(/.*)?"
