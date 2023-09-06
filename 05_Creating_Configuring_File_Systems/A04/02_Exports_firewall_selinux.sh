@@ -41,9 +41,9 @@ semanage fcontext -a -t public_content_rw_t "/my/files(/.*)?"
 
 ls -ldZ /my/data /my/files
 
-restorecon -Rv /data
+restorecon -Rv /my/data
 
-restorecon -Rv /files
+restorecon -Rv /my/files
 
 systemctl start nfs-server
 
