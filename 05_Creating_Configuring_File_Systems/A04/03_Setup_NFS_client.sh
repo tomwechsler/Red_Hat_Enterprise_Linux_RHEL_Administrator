@@ -5,7 +5,7 @@ sudo -i
 
 dnf install -y nfs-utils
 
-showmount -e 192.168.56.102
+showmount -e 192.168.56.101
 
 mkdir -p /remote/files
 mkdir -p /remote/data

@@ -36,8 +36,8 @@ apropos _selinux
 
 man 8 nfsd_selinux
 
-semanage fcontext -a -t public_content_rw_t "/my/data(/.*)?"
-semanage fcontext -a -t public_content_rw_t "/my/files(/.*)?"
+semanage fcontext -a -t nfs_t "/my/data(/.*)?"
+semanage fcontext -a -t nfs_t "/my/files(/.*)?"
 
 ls -ldZ /my/data /my/files
 
@@ -63,6 +63,10 @@ firewall-cmd --get-services
 find / -name *.xml | grep nfs
 
 firewall-cmd --add-service=nfs
+
+firewall-cmd --permanent --add-service=mountd --add-service=rpc-bind
+
+firewall-cmd --reload
 
 firewall-cmd --list-all
 
