@@ -8,7 +8,7 @@ modprobe kvdo
 
 sudo -i
 
-vdo create --name=vdo1 --device=/dev/sdc --vdoLogicalSize=40G
+vdo create --name=vdo1 --device=/dev/sda --vdoLogicalSize=40G
 
 vdo status --name=vdo1 | grep -E '(Dedup|Compression)'
 
