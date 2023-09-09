@@ -6,14 +6,14 @@ dnf install -y autofs
 
 vim /etc/autoTABTAB
 
-vim /etc/auto.master.d/my.autofs
+vim /etc/auto.master.d/srv.autofs
 
-/my /etc/auto.data
+/srv /etc/auto.data
 
-ls /data
+ls /srv
 
 vim /etc/auto.data
-data -rw,soft 192.168.56.102:/my/data
+nfsdata -rw,soft 192.168.56.108:/srv/nfsdata
 
 systemctl enable --now autofs
 
@@ -21,15 +21,15 @@ systemctl enable --now autofs
 exit
 
 #Created when autofs is started
-ls -ld /my
+ls -ld /srv
 
-ls -l /my
+ls -l /srv
 
-cd /my
+cd /srv
 
 ls
 
 #created when accessing the directory
-cd data
+cd nfsdata
 
 ls
