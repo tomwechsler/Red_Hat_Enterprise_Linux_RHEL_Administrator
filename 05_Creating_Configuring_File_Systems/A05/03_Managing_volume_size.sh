@@ -10,7 +10,7 @@ sudo vgextend myvg /dev/sdX
 sudo lvextend --type vdo -L +100G -n mylv myvg
 
 #Grow the file system on the VDO drive
-sudo xfs_growfs /mnt/myVDO
+sudo xfs_growfs /my/vdo
 
 df -h /my/vdo
 
