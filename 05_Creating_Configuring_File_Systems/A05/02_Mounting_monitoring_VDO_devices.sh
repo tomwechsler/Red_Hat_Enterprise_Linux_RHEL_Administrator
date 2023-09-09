@@ -2,12 +2,16 @@
 
 sudo -i
 
+#Create a mount point for the VDO drive
 mkdir /my/vdo
 
 chmod -v 0700 /my/vdo
 
-vim /etc/fstab
-/dev/mapper/vdo /my/vdo xfs x-systemd.requires=vdo.service 0 0
+#Mount the VDO drive
+sudo mount /dev/myvg/mylv /my/vdo
+
+#Add the VDO drive to the /etc/fstab file so it is automatically mounted at boot time
+echo '/dev/mapper/myvg-mylv /my/vdo xfs defaults,_netdev 0 0' | sudo tee -a /etc/fstab
 
 mount -a
 

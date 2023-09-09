@@ -2,19 +2,15 @@
 
 sudo -i
 
-vdo status
+#Extend the volume group
+sudo vgextend myvg /dev/sdX
 
-vdo status | less
+#Expand the VDO drive
+#Replace 100G with the desired additional logical size of the VDO drive
+sudo lvextend --type vdo -L +100G -n mylv myvg
 
-vdo status | grep -i "logical size"
-
-vdo growLogical --name=vdo1 --vdoLogicalSize=80G
-
-vdo status | grep -i "logical size"
-
-df -h /my/vdo
-
-xfs_growfs /dev/mapper/vdo1
+#Grow the file system on the VDO drive
+sudo xfs_growfs /mnt/myVDO
 
 df -h /my/vdo
 

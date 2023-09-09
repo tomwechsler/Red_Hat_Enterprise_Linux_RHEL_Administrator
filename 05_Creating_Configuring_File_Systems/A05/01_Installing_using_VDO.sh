@@ -1,15 +1,21 @@
 #Working on the rhel system
 
-sudo dnf install vdo kmod-kvdo
+#Install the VDO package
+sudo dnf install -y vdo kmod-kvdo lvm2
 
-sudo systemctl enable --now vdo.service
+#Load the VDO module
+sudo modprobe kvdo
 
-modprobe kvdo
+#Create a physical volume
+#Replace /dev/sdX with the desired block device
+sudo pvcreate /dev/sdX
 
-sudo -i
+#Create a volume group
+sudo vgcreate myvg /dev/sdX
 
-vdo create --name=vdo1 --device=/dev/sdc --vdoLogicalSize=40G
+#Create a VDO drive
+#Replace 100G with the desired logical size of the VDO drive
+sudo lvcreate --type vdo -L 40G -n mylv myvg
 
-vdo status --name=vdo1 | grep -E '(Dedup|Compression)'
-
-mkfs.xfs -K /dev/mapper/vdo1
+#Format the VDO drive with a file system of your choice (e.g. xfs)
+sudo mkfs.xfs -K /dev/myvg/mylv
