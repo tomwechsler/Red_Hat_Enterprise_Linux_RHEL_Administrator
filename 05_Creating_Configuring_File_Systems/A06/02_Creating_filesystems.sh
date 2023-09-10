@@ -8,7 +8,7 @@ mkdir /my/stratis
 
 vim /etc/fstab
 #Add the following line to the fstab file:
-/stratis/pool1/fs1 /my/stratis xfs x-systemd.requires=stratisd.service defaults 0 0
+/dev/stratis/pool1/fs1 /my/stratis xfs x-systemd.requires=stratisd.service 0 0
 
 mount -a
 

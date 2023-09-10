@@ -10,17 +10,17 @@ mkdir /backup
 
 stratis filesystem snapshot pool1 fs1 snap1 
 
-mount /stratis/pool1/snap1 /backup
+mount /dev/stratis/pool1/snap1 /backup
 
 ls /backup
 
 ls /my/stratis
 
-rm -f /my/stratis/*r*
+rm -f /my/stratis/*me*
 
 ls /my/stratis
 
-cp /backup/*r* /my/stratis
+cp /backup/*me* /my/stratis
 
 ls /my/stratis
 
