@@ -4,7 +4,9 @@ sudo -i
 
 subscription-manager status
 
-yum repolist
+
+
+dnf repolist
 
 yum --version
 
