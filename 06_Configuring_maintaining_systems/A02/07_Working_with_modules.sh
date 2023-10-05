@@ -2,6 +2,9 @@
 
 sudo -i
 
+#Remove the web repos
+rm /etc/yum.repos.d/127*
+
 #List all available modules
 dnf module list 
 

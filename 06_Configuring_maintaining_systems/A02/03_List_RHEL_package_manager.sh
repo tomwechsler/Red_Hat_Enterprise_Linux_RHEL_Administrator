@@ -1,6 +1,6 @@
 #Working on the redhat system
 
-#Check is package is installed or not, globbing can be used
+#Check if a package is installed or not, globbing can be used
 dnf list tree
 
 #Which packages installs tree
