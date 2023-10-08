@@ -10,7 +10,6 @@ systemctl cat logrotate.timer
 
 #Display the manual page for the 'systemd.timer' file format and search for 'Accuracy'
 man 5 systemd.timer
-/Accur
 
 #Edit the 'backup.service' unit file with full content and force the changes
 systemctl edit backup.service --full --force

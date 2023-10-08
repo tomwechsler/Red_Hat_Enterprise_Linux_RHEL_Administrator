@@ -8,6 +8,8 @@ man 5 systemd.timer
 #List all installed timer units
 systemctl list-unit-files --type=timer
 
+systemctl list-timers
+
 #Check for available updates using 'yum'
 yum check-update
 
