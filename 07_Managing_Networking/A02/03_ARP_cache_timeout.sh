@@ -3,7 +3,7 @@
 ip neigh show
 
 #Display the arp cache timeout value
-echo /proc/sys/net/ipv4/neigh/default/gc_stale_time
+cat /proc/sys/net/ipv4/neigh/default/gc_stale_time
 
 #Use sysctl to display the arp cache timeout value
 sysctl -a
