@@ -6,7 +6,7 @@ ip neighbor show
 
 ip n
 
-sudo ip neibhor delete 192.168.56.108 dev enp0s8 lladdr 08:00:27:4a:1c:4c
+sudo ip neibhor delete 192.168.56.108 dev eth1 lladdr 08:00:27:4a:1c:4c
 
 ip n
 

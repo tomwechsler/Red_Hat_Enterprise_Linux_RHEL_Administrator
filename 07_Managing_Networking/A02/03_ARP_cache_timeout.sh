@@ -16,8 +16,8 @@ sudo sysctl -w net.ipv4.neigh.default.gc_stale_time=120
 #Check the arp cache timeout value
 sysctl -a | grep gc_stale_time
 
-#Change the enp0s8 arp cache timeout value
-sudo sysctl -w net.ipv4.neigh.enp0s8.gc_stale_time=120
+#Change the eth1 arp cache timeout value
+sudo sysctl -w net.ipv4.neigh.eth1.gc_stale_time=120
 
 #Check the arp cache timeout value
 sysctl -a | grep gc_stale_time
@@ -26,8 +26,8 @@ sysctl -a | grep gc_stale_time
 sudo vim /etc/sysctl.conf
 
 net.ipv4.neigh.default.gc_stale_time=120
-net.ipv4.neigh.enp0s8.gc_stale_time=120
-net.ipv4.neigh.enp0s3.gc_stale_time=120
+net.ipv4.neigh.eth1.gc_stale_time=120
+net.ipv4.neigh.eth0.gc_stale_time=120
 
 #Save and exit the file
 
