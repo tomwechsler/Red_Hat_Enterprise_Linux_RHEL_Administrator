@@ -31,5 +31,5 @@ net.ipv4.neigh.eth0.gc_stale_time=120
 
 #Save and exit the file
 
-#Reload the sysctl.conf file (optional)
+#Print the sysctl.conf file (optional)
 sudo sysctl -p
