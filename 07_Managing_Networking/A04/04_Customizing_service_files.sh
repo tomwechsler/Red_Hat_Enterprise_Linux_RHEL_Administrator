@@ -8,7 +8,7 @@ firewall-cmd --info-service=http
 firewall-cmd --info-service=https
 
 #Add the https service to the internal zone (the port will be there for 10 seconds)
-firewall-cmd --add-service=443/tcp --zone=internal --timeout=10
+firewall-cmd --add-port=443/tcp --zone=internal --timeout=10
 
 #List the internal zone
 firewall-cmd --list-all --zone=internal
