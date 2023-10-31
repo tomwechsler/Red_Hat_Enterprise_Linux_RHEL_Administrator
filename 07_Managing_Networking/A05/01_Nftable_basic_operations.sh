@@ -5,9 +5,6 @@ sudo -i
 #The firewall state
 firewall-cmd --state
 
-#Stop the firewall
-systemctl stop firewalld
-
 #List the nft rules
 nft list ruleset
 
@@ -24,10 +21,10 @@ nft list tables
 nft list ruleset
 
 #Start the firewall
-systemctl start firewalld
+systemctl reload firewalld
 
 #List the ip filter rules
-nft list table ip filter
+nft list table inet firewalld
 
 #List the nftables tables
 nft list tables
