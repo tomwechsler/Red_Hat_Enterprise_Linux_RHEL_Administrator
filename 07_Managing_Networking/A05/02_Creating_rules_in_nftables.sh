@@ -2,8 +2,8 @@
 
 sudo -i
 
-#Disable and stop the firewalld service
-systemctl disable --now firewalld
+#Stop the firewalld service
+systemctl stop firewalld
 
 #Flush the nftables rules
 nft flush ruleset
@@ -45,7 +45,7 @@ nft list ruleset
 ping -c 2 192.168.56.101
 
 #SSH from the remote system
-ssh 192.168.56.101
+ssh 192.168.56.102
 
 #List ruleset
 nft list ruleset
