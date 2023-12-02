@@ -1,4 +1,4 @@
-#Working on the rhel system
+#Working on the alma system
 
 #Set the password for 'u1' user with root privileges
 echo Password | sudo passwd --stdin u1

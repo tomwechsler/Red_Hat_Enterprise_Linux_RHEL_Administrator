@@ -1,4 +1,4 @@
-#Working on the rhel system
+#Working on the alma system
 
 #Add a new user named 'u1' with root privileges
 sudo useradd u1
