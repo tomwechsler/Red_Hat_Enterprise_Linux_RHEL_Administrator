@@ -4,13 +4,13 @@
 sudo groupadd ops
 
 #Run a command with the group ID of 'ops'
-sg ops
+newgrp ops
 
 #Set the password for 'ops' group with root privileges
 sudo gpasswd ops
 
 #Run a command with the group ID of 'ops' after setting the password
-sg ops
+newgrp ops
 
 #Print the user identifier, group identifier, and groups for 'vagrant'
 id vagrant
@@ -30,4 +30,4 @@ gpasswd -a user1 ops
 getent group ops
 
 #Search for 'ops' in the shadow file with root privileges
-sudo grep ops /etc/shadow
+sudo grep ops /etc/gshadow
