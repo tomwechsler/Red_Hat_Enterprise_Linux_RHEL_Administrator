@@ -16,7 +16,7 @@ visudo #Delete the line
 sudo visudo #Will work again
 
 #Check the syntax of the sudoers file '/etc/sudoers.d/helpdesk' with root privileges
-sudo visudo -c -f /etc/sudoers.d/helpdesk
+sudo visudo -f /etc/sudoers.d/helpdesk
 
 #Add a new line to the sudoers file allowing 'helpdesk' group to run 'passwd' command as 'root', but not for 'root' user
 %helpdesk ALL=(root) /usr/bin/passwd, !/usr/bin/passwd root
