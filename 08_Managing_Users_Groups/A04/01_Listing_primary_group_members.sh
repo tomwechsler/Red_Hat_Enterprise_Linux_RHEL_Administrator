@@ -1,4 +1,4 @@
-#Working on the rhel system
+#Working on the alma system
 
 #Display the contents of the group file which contains group account information
 cat /etc/group
