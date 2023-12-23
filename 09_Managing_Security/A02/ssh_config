@@ -1,0 +1,7 @@
+Host * 
+  IdentityFile ~/.ssh/id_rsa 
+  ServerAliveInterval 300
+  ServerAliveCountMax 2
+Host remote 
+  Hostname 192.168.56.108 
+  User vagrant
