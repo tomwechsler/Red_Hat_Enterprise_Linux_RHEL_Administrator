@@ -12,11 +12,13 @@ sudo sshd -T | grep -i passwordauthentication
 #Open the SSH server configuration file in vim editor with root privileges
 sudo vim /etc/ssh/sshd_config
 
-#PasswordAuthentication no
+#PasswordAuthentication no (remove the # and change the value to 'no')
 
 #Check the SSH server configuration and filter for 'passwordauthentication' with root privileges
 sudo sshd -T | grep -i passwordauthentication
 
 exit
+
+ssh -o PreferredAuthentications=none 192.168.56.108
 
 ssh tom@192.168.56.108
