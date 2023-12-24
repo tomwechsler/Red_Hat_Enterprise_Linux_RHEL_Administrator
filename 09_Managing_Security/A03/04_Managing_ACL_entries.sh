@@ -9,6 +9,12 @@ ls /private
 #List the permissions of the '/private' directory
 ls -ld /private
 
+#Leave the root shell
+exit
+
+#No permissions for 'vagrant' user to access the '/private' directory
+ls /private
+
 #Set the ACL for the '/private' directory to give 'vagrant' user read, write, and execute permissions with root privileges
 sudo setfacl -m u:vagrant:rwx /private
 
