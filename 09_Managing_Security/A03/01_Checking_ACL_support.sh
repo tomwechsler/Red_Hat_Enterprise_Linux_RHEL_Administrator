@@ -6,8 +6,8 @@ df -hT /
 #Search for 'acl' in the boot configuration file for the current kernel version
 grep -i acl /boot/config-$(uname -r)
 
-#List the 'acl' package using yum package manager with root privileges
-sudo yum list acl
+#List the 'acl' package using dnf package manager with root privileges
+sudo dnf list acl
 
 #Query the RPM package that provides the '/usr/bin/getfacl' file
 rpm -qf /usr/bin/getfacl
