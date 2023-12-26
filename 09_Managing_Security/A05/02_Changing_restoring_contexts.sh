@@ -25,7 +25,7 @@ setenforce 0
 sudo -l
 
 #Display the system logs in real time (root)
-journalctl -f
+tail -f /var/log/messages
 
 #Display the commands the current user can execute with sudo
 sudo -l

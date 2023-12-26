@@ -18,8 +18,8 @@ ls -ldZ /staff
 #Restore the SELinux context of the '/staff' directory with verbose output
 restorecon -v /staff
 
-#Create a new directory named 'bob' in the '/staff' directory
-mkdir /staff/bob
+#Create a new user named 'bob' with home directory '/staff/bob'
+useradd -m bob -d /staff/bob
 
 #List the '/staff/bob' directory with its security context
 ls -ldZ /staff/bob
