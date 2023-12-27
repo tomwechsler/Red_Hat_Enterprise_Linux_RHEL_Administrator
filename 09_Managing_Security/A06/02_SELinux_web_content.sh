@@ -3,6 +3,9 @@
 #Switch to the root user and simulate a full login shell
 sudo -i
 
+#Set SELinux in permissive mode
+setenforce 0
+
 #Create a new directory named 'web'
 mkdir /web
 
@@ -32,6 +35,12 @@ systemctl status httpd
 
 #Send a GET request to 'http://localhost:1000/everyday.html'
 curl http://localhost:1000/everyday.html
+
+#Set SELinux in enforcing mode
+setenforce 1
+
+#Send a GET request to 'http://localhost:1000/everyday.html'
+curl http://localhost:1000/everyday.html #This will fail
 
 #Search the audit logs for AVC messages
 ausearch -m AVC -ts recent

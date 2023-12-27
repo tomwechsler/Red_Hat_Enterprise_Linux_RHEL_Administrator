@@ -3,6 +3,9 @@
 #Switch to the root user and simulate a full login shell
 sudo -i
 
+#Set SELinux in permissive mode
+setenforce 0
+
 #Install the 'httpd' package using dnf package manager
 dnf install -y httpd
 
@@ -29,6 +32,15 @@ grep 'Listen 1000' /etc/httpd/conf/httpd.conf
 
 #Start the 'httpd' service
 systemctl start httpd
+
+#Stop the 'httpd' service
+systemctl stop httpd
+
+#Set SELinux in enforcing mode
+setenforce 1
+
+#Start the 'httpd' service
+systemctl start httpd #This will fail
 
 #Search the audit logs for AVC messages
 ausearch -m AVC -ts recent
