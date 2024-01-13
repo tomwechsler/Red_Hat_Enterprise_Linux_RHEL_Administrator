@@ -7,13 +7,13 @@ tree .local
 less /etc/containers/registries.conf
 
 #Search for 'ubuntu' in the container image registries
-podman search ubuntu
+podman image search ubuntu
 
 #Search for 'hello' in the container image registries
 podman image search hello
 
-#Display the lines containing 'hello' in the '/etc/containers/registries.d/000-shortnames.conf' file
-grep hello /etc/containers/registries.d/000-shortnames.conf
+#Display the lines containing 'hello' in the '/etc/containers/registries.conf.d/000-shortnames.conf' file
+grep hello /etc/containers/registries.conf.d/000-shortnames.conf
 
 #Search for 'fedora' in the container image registries
 podman image search fedora
