@@ -10,7 +10,7 @@ cp Red_Hat_Enterprise_Linux_RHEL_Administrator/10_Container_Management/A05/podma
 ls -lZ podman/www
 
 #Change the security context of the 'podman/www' directory to 'container_file_t'
-chcon -t container_file_t podman/www
+chcon -Rt container_file_t podman/www
 
 #List the contents of the 'podman/www' directory with their security context again
 ls -lZ podman/www
