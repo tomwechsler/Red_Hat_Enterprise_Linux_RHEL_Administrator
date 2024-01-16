@@ -1,0 +1,37 @@
+version: '3'
+
+services:
+  controller:
+    build:
+      context: ./fedora
+      dockerfile: Dockerfile
+      image: localhost/fedora
+    image: localhost/fedora
+    container_name: controller
+    hostname: controller
+    ports:
+      - "2222:22"
+    volumes:
+      - /home/tux/podman/project/playbooks:/home/tux/playbooks
+    networks:
+      - mynetwork
+
+  ubuntu:
+    build:
+      context: ./ubuntu
+      dockerfile: Dockerfile
+      image: localhost/ubuntu
+    image: localhost/ubuntu
+    container_name: ubuntu
+    hostname: ubuntu
+    networks:
+      - mynetwork
+
+networks:
+  mynetwork:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.16.0.0/24
+          gateway: 172.16.0.1
