@@ -1,0 +1,6 @@
+version: '3'
+services:
+  apache:
+    image: docker.io/ubuntu/apache2
+    ports:
+      - 8000:80
