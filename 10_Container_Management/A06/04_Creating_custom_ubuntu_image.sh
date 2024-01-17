@@ -41,15 +41,3 @@ podman container run -d -p 2022:22 --name ubuntu --hostname ubuntu localhost/ubu
 
 #Connect to the 'ubuntu' container via SSH on port 2022, disable strict host key checking, and do not save the host key in the known hosts file
 ssh -p 2022 -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null vagrant@localhost
-
-#Connect to the 'controller' container via SSH
-ssh controller #This will will not work
-
-#Exit the SSH session
-exit
-
-#Display the network settings of the 'ubuntu' container
-podman container inspect ubuntu | grep Network
-
-#Display the network settings of the 'ubuntu' container and the 10 lines following it
-podman container inspect ubuntu | grep -A10 Network
