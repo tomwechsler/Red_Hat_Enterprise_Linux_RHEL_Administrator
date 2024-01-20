@@ -12,7 +12,7 @@ services:
     ports:
       - "2222:22"
     volumes:
-      - /home/tux/podman/project/playbooks:/home/tux/playbooks
+      - /home/vagrant/podman/project/playbooks:/home/vagrant/playbooks
     networks:
       - mynetwork
 
