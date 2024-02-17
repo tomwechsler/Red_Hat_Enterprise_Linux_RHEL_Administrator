@@ -39,6 +39,3 @@ nano my.sh
 #Save and exit
 
 ./my.sh
-
-
-
