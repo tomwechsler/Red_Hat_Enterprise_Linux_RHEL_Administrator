@@ -21,5 +21,3 @@ abbr _sh #!/bin/bash
 vim my.sh
 
 #Save and exit
-
-

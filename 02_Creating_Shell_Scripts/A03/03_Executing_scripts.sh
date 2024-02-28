@@ -22,7 +22,3 @@ mkdir bin && mv my.sh bin
 my.sh
 
 which my.sh
-
-
-
-
