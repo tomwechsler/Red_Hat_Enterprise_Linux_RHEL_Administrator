@@ -3,7 +3,7 @@
 vim bin/createuser.sh
 
 if [ "$#" -lt 1 ] ; then
-  echo "usage: $0 <username>"
+  echo "You must provide a username: $0 <username>"
   exit 1
 fi
 
@@ -18,4 +18,3 @@ echo $?
 createuser.sh fred
 
 echo $?
-

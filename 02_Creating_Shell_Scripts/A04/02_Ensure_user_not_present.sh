@@ -23,5 +23,3 @@ echo $?
 createuser.sh
 
 echo $?
-
-
