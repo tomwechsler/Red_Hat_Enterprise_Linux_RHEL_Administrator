@@ -26,6 +26,3 @@ sudo shutdown -c
 vagrant ssh rhel
 
 exit
-
-
-

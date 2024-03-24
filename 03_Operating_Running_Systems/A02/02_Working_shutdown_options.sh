@@ -24,6 +24,3 @@ sudo shutdown -c
 sudo shutdown -h +1
 
 vagrant up rhel
-
-
-
