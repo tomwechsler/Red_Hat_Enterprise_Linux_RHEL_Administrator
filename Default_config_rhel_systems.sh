@@ -3,7 +3,7 @@ export LC_ALL="en_US.UTF-8"
 #If this does not work, use:
 sudo dnf install -y glibc-langpack-en
 
-#If tab completion for systemctl does dit work
+#If tab completion does not work
 sudo dnf install -y bash-completion
 
 #Install the vim enhanced editor
