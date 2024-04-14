@@ -3,8 +3,7 @@
 #Systemd has the first PID
 ps -f -p 1
 
-
-sudo dnf install -y atd
+sudo dnf install -y at
 
 sudo systemctl status atd
 
@@ -35,5 +34,3 @@ sudo systemctl disable --now atd chronyd
 
 #Both together
 sudo systemctl enable --now chronyd atd
-
-
