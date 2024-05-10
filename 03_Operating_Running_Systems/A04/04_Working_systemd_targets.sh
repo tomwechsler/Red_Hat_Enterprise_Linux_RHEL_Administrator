@@ -36,5 +36,3 @@ systemctl isolate multi-user.target
 ss -ntl
 
 ip a sh
-
-

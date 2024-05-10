@@ -29,5 +29,3 @@ sudo systemctl mask --now atd
 
 #This will not work
 sudo systemctl start atd
-
-

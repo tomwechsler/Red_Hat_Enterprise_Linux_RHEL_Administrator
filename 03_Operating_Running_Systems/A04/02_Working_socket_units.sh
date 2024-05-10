@@ -21,5 +21,3 @@ systemctl list-unit-files --type service
 systemctl list-unit-files --type timer
 
 systemctl list-unit-files --type target
-
-
