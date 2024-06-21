@@ -37,5 +37,3 @@ my.sh
 my.sh $$
 
 my.sh $$ 1
-
-
