@@ -1,3 +1,4 @@
+#Print the partition table
 sudo parted /dev/loop1 print
 
 #Delete the disk label
