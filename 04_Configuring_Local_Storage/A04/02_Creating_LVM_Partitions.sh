@@ -1,9 +1,13 @@
+#List all block devices
 lsblk 
 
+#Use dmsetup to list device-mapper devices
 sudo dmsetup ls
 
+#Use dmsetup to list device-mapper devices in tree format
 sudo dmsetup ls --tree #List device-mapper devices 
 
+#Print the partition table
 sudo parted /dev/loop1
 
 #In parted, create a partition table

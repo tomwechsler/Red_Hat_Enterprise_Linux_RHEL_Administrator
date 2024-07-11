@@ -19,8 +19,8 @@ lsblk
 #Inform the system of partition table changes on /dev/loop0
 sudo partprobe /dev/loop0
 
-#Mount the filesystem with UUID=8a3f1d99-bcf2-42bd-b96a-8cefae231ab8 to /data
-sudo mount UUID=8a3f1d99-bcf2-42bd-b96a-8cefae231ab8 /data
+#Mount the filesystem with UUID=a3cdc759-47a9-46a2-92a8-e58548815819 to /data
+sudo mount UUID=a3cdc759-47a9-46a2-92a8-e58548815819 /data
 
 #Attempt to mount a filesystem of type XFS without specifying a device or mount point, which will fail
 mount -t XFS
@@ -42,5 +42,5 @@ sudo reboot
 #List all block devices to verify changes after reboot
 lsblk
 
-#Mount the filesystem with UUID=8a3f1d99-bcf2-42bd-b96a-8cefae231ab8 to /data
-sudo mount UUID=8a3f1d99-bcf2-42bd-b96a-8cefae231ab8 /data
+#Mount the filesystem with UUID=a3cdc759-47a9-46a2-92a8-e58548815819 to /data
+sudo mount UUID=a3cdc759-47a9-46a2-92a8-e58548815819 /data
