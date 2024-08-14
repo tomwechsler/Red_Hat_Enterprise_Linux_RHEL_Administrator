@@ -1,17 +1,24 @@
 #Working on the rhel system
 
+#Print the current working directory
 pwd
 
+#List the files and directories in the current directory
 ls
 
+#List the files and directories in the current directory with detailed information, including hidden files
 ls -la
 
+#Create an empty file named 'file1'
 touch file1
 
+#List the files and directories in the current directory to verify the creation of 'file1'
 ls
 
+# Display the type of the file 'file1'
 file file1
 
+# Print the string 'hello' to the terminal
 echo hello
 
 #Content is overwritten
