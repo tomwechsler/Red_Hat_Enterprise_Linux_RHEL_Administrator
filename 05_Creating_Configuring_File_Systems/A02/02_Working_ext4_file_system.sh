@@ -9,26 +9,35 @@ sudo poweroff
 
 #Start the virtual machine
 
+#List all block devices
 lsblk
 
+#Switch to the root user
 sudo -i
 
-mkfs.ext4 /dev/sda
+#Create an ext4 filesystem on /dev/sdb
+mkfs.ext4 /dev/sdb
 
-dumpe2fs /dev/sda
+#Display detailed information about the ext4 filesystem on /dev/sdb
+dumpe2fs /dev/sdb
 
-dumpe2fs /dev/sda | grep count
+#Display detailed information about the ext4 filesystem on /dev/sdb and filter the output to show lines containing 'count'
+dumpe2fs /dev/sdb | grep count
 
 #The value -1 means disabled
-dumpe2fs /dev/sda | grep -i "mount count"
+dumpe2fs /dev/sdb | grep -i "mount count"
 
 #The value 0 means disabled
-dumpe2fs /dev/sda | grep interval
+dumpe2fs /dev/sdb | grep interval
 
-dumpe2fs /dev/sda | grep -i last
+#Display detailed information about the ext4 filesystem on /dev/sdb and filter the output to show lines containing 'last' (case-insensitive)
+dumpe2fs /dev/sdb | grep -i last
 
-tune2fs -L "SALES" /dev/sda
+#Change the label of the ext4 filesystem on /dev/sdb to "SALES"
+tune2fs -L "SALES" /dev/sdb
 
-tune2fs -l /dev/sda
+#Display detailed information about the ext4 filesystem on /dev/sdb
+tune2fs -l /dev/sdb
 
-tune2fs -l /dev/sda | grep -i volume
+#Display detailed information about the ext4 filesystem on /dev/sdb and filter the output to show lines containing 'volume' (case-insensitive)
+tune2fs -l /dev/sdb | grep -i volume
