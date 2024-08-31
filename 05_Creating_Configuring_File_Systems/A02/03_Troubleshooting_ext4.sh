@@ -1,19 +1,30 @@
 #Working on the rhel system
 
+#Mount /dev/sdc to /mnt/sdc
+sudo mount /dev/sdc /mnt/sdc
 
-#Write random data to the /dev/sdb partition, starting at the 10th kilobyte, with a block size of 1 kilobyte and a total of 4 kilobytes
-sudo dd if=/dev/urandom of=/dev/sdb bs=1k seek=10 count=4k
+#Unmount /dev/sdc
+sudo umount /mnt/sdc
+
+#Write random data to the /dev/sdc partition, starting at the 10th kilobyte, with a block size of 1 kilobyte and a total of 4 kilobytes
+sudo dd if=/dev/urandom of=/dev/sdc bs=1k seek=10 count=4k
 
 lsblk
 
-dump2fs /dev/sde2 | grep uperblock #(everything is ok with /dev/sde2 - I write "uperblock" because I don't know if it's upper or lower case)
+#(everything is ok with /dev/sdc - I write "uperblock" because I don't know if it's upper or lower case)
+sudo dumpe2fs /dev/sdb | grep uperblock
 
-dump2fs /dev/sdb | grep uperblock
+#Some superblocks are corrupted
+sudo dumpe2fs /dev/sdc | grep uperblock 
 
-fsck /dev/sdb #We could try to repair the partition directly => BUT, we are looking for the superblocks
+#We could try to repair the partition directly => BUT, we are looking for the superblocks
+sudo fsck /dev/sdc
 
-mkfs.ext4 -n /dev/sdb #(ATTENTION: be sure to use -n!!!!) => now we see the superblocks
+#(ATTENTION: be sure to use -n!!!!) => now we see the superblocks
+sudo mkfs.ext4 -n /dev/sdc 
 
-fsck -b 40961 /dev/sdb #after -b insert a superblock from above
+#after -b insert a superblock from above
+sudo fsck -b 40961 /dev/sdc 
 
-fsck /dev/sdb
+#Another check
+sudo fsck /dev/sdc
