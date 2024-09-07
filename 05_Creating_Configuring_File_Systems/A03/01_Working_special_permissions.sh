@@ -32,11 +32,11 @@ find ~/perms/ -type d -perm /o=tw #List dirs where Sticky bit set or world writa
 find ~/perms/ -type d -perm -o=tw #List dirs where both Stick bit and world writable set
 
 
-SUID
-Used on programs to run as the user owner during execution
+#SUID
+#Used on programs to run as the user owner during execution
 
-SGID
-On directories, new files are assigned the group owner from the directory
+#SGID
+#On directories, new files are assigned the group owner from the directory
 
-Sticky Bit
-With this set users can only delete files they own from shared directories
+#Sticky Bit
+#With this set users can only delete files they own from shared directories
