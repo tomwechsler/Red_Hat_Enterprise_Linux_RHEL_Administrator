@@ -11,3 +11,6 @@ sudo dnf install -y vim-enhanced
 
 #Install the man pages
 sudo dnf install -y man man-pages man-db
+
+#To use lvm and vgs => to display the volume groups, edit the /etc/lvm/lvm.conf file and set the following:
+use_devicesfile = 0
