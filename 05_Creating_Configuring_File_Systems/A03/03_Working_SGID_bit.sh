@@ -39,12 +39,16 @@ touch file2
 #The file2 is created with the group of the parent directory
 ls -l
 
+#Switch to the root user
 sudo -i
 
+#Set the default file creation permissions to 007 (rw-rw----)
 umask 007
 
+#Create an empty file named 'root2' in the /admin directory
 touch /admin/root2
 
+#Exit the current shell session (log out from the root user)
 exit
 
 #The root2 file is created with the group of the parent directory
