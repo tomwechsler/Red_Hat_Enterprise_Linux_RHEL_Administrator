@@ -12,19 +12,25 @@ sudo dnf install -y nfs-utils
 ss -ntl
 
 #Configure the NFS server
-nfsconf --set nfsd vers4 y
+sudo nfsconf --set nfsd vers4 y
 
-nfsconf --set nfsd tcp y
+#Enable TCP protocol for NFS server
+sudo nfsconf --set nfsd tcp y
 
-nfsconf --set nfsd udp n
+#Disable UDP protocol for NFS server
+sudo nfsconf --set nfsd udp n
 
-nfsconf --set nfsd vers3 n
+#Disable NFS version 3 for NFS server
+sudo nfsconf --set nfsd vers3 n
 
 #Check the configuration
-vim /etc/nfs.conf
+sudo vim /etc/nfs.conf
 
+#Enable and start the NFS server service immediately
 sudo systemctl enable --now nfs-server
 
+#Display listening TCP ports and their status
 ss -ntl
 
-cat /proc/fs/nfsd/versions
+#Display the supported NFS versions by the NFS server
+sudo cat /proc/fs/nfsd/versions
