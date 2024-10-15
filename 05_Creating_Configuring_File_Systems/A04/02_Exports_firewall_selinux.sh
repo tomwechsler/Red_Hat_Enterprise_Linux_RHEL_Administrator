@@ -1,13 +1,13 @@
-#Working on the rhel system
+#Working on the rhel system in root session
 
 #Display the status of the NFS server service
-sudo systemctl status nfs-server
+systemctl status nfs-server
 
 #Stop the NFS server service
-sudo systemctl stop nfs-server
+systemctl stop nfs-server
 
 #Open the /etc/exports.d/my.exports file in the vim editor to edit NFS exports
-sudo vim /etc/exports.d/my.exports
+vim /etc/exports.d/my.exports
 /my/data	192.168.56.*(rw)
 /my/files	192.168.56.*(rw,no_root_squash)
 
