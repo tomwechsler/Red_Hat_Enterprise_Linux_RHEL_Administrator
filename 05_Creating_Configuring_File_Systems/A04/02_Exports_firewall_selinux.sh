@@ -80,6 +80,12 @@ exportfs -v
 #Check the state of the firewall
 firewall-cmd --state
 
+#Start the firewall
+systemctl enable firewalld --now
+
+#Check the state of the firewall
+systemctl status firewalld
+
 #List all the current firewall settings and rules
 firewall-cmd --list-all
 
