@@ -8,20 +8,20 @@ dnf install -y autofs
 #Open the /etc/auto.master file in the vim editor to configure autofs
 vim /etc/auto.master
 
-#Open the /etc/auto.master.d/srv.autofs file in the vim editor to add autofs configuration for /srv
-vim /etc/auto.master.d/srv.autofs
+#Open the /etc/auto.master.d/my.autofs file in the vim editor to add autofs configuration for /my
+vim /etc/auto.master.d/my.autofs
 
-#Add the autofs map file /etc/auto.data for the /srv directory
-/srv /etc/auto.data
+#Add the autofs map file /etc/auto.data for the /my directory
+/my /etc/auto.data
 
-#List the contents of the /srv directory
-ls /srv
+#List the contents of the /my directory
+ls /my
 
 #Open the /etc/auto.data file in the vim editor to configure NFS mount points
 vim /etc/auto.data
 
-#Add an entry to mount the NFS export /srv/nfsdata from 192.168.56.108 with read-write and soft mount options
-nfsdata -rw,soft 192.168.56.108:/srv/nfsdata
+#Add an entry to mount the NFS export /my/files from 192.168.56.102 with read-write and soft mount options
+files -rw,soft 192.168.56.102:/my/files
 
 #Enable and start the autofs service immediately
 systemctl enable --now autofs
@@ -30,15 +30,15 @@ systemctl enable --now autofs
 exit
 
 #Created when autofs is started
-ls -ld /srv
+ls -ld /my
 
-ls -l /srv
+ls -l /my
 
-cd /srv
+cd /my
 
 ls
 
 #created when accessing the directory
-cd nfsdata
+cd files
 
 ls
