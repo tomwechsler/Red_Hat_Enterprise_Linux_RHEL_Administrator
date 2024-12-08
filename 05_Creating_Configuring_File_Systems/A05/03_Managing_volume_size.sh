@@ -14,8 +14,11 @@ lvextend -l 100%FREE myvg/vpool0
 #Grow the file system on the VDO drive
 sudo xfs_growfs /my/vdo
 
+#Display disk usage in human-readable format for the /my/vdo directory
 df -h /my/vdo
 
-vdo --human-readable
+#Display VDO (Virtual Data Optimizer) statistics in human-readable format
+vdostats --human-readable
 
+#Display the total disk usage of the /my/vdo directory in a human-readable format
 du -sh /my/vdo
