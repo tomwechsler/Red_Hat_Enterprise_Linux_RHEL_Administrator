@@ -15,3 +15,4 @@ Everything about Red Hat Enterprise Linux (RHEL) Administrator!
 | 07 | Managing Networking |
 | 08 | Managing Users and Groups |
 | 09 | Managing Security |
+| 10 | Container Management |
