@@ -1,13 +1,18 @@
 #Working on the redhat system (be sure that you have the RHEL DVD connected to the VM)
 
+#Switch to the root user
 sudo -i
 
+#List all block devices
 lsblk
 
+#Mount the device /dev/sr0 to the /mnt directory
 mount /dev/sr0 /mnt
 
+#List the contents of the /mnt directory
 ls /mnt
 
+#List the contents of the /mnt directory that start with 'A' or 'B'
 ls /mnt/[AB]*
 
 #Install the dnf-plugins-core package
