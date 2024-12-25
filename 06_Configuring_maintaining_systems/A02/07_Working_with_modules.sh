@@ -19,7 +19,3 @@ dnf module list postgresql
 
 #Install the PostgreSQL client module
 dnf module install postgresql/client
-
-
-
-#Using modules, we can select the version and profile we need.
