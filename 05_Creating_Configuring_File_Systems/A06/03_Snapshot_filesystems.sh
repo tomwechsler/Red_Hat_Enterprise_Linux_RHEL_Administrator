@@ -36,7 +36,7 @@ cp /backup/*me* /my/stratis
 ls /my/stratis
 
 #List all Stratis filesystems in the 'pool1' pool
-stratis filesystem snapshot pool1
+stratis filesystem list pool1
 
 #Unmount the /backup directory
 umount /backup
