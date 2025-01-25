@@ -3,6 +3,12 @@
 #Switch to the root user
 sudo -i
 
+#Register the system
+subscription-manager register --username yourusername --password yourpassword --auto-attach
+
+#Check the status of the subscription
+subscription-manager status
+
 #List all block devices
 lsblk
 
