@@ -17,5 +17,8 @@ dnf module install ruby:3.1
 #List available modules for the PostgreSQL database
 dnf module list postgresql
 
+#Enable the PostgreSQL module (shoud be optional)
+dnf module enable postgresql:16
+
 #Install the PostgreSQL client module
-dnf module install postgresql/client
+dnf module install postgresql:16/client
