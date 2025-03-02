@@ -5,7 +5,6 @@ echo hello | tee file1
 #To append
 echo hello | tee -a file1
 
-
 #Fails as redirection from shell 
 sudo echo "1.0.0.1 cloudflare" >> /etc/hosts
 
@@ -16,5 +15,3 @@ ping cloudflare
 
 #List the line
 tail -n 1 /etc/hosts
-
-

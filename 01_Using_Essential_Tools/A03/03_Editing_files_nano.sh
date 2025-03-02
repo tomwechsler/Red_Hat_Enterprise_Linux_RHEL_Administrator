@@ -1,7 +1,9 @@
 #Working on the rhel system
 
+#Check the repolist
 sudo dnf repolist
 
+#Install the necessary tools
 sudo dnf install -y vim nano bash-completion
 
 ls
@@ -29,6 +31,3 @@ cat newfile
 
 #To edit with sudo
 sudo nano /etc/hosts
-
-
-

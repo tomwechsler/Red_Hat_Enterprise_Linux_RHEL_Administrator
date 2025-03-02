@@ -15,13 +15,15 @@ chroot /sysroot
 
 sh-4.3$ passwd
 
+sh-4.3$ touch /.autorelabel
+
 exit
 
 switch_root# mount -o remount,ro /sysroot
 
 exit
 
-#Login as root and
+#Login as root and if have not create the autorelabel file then
 restorecon -v /etc/shadow
 
 getenforce

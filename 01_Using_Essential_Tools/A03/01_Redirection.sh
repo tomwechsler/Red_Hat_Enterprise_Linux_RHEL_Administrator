@@ -44,6 +44,7 @@ cat error
 
 ls /etc/hosts /etc/Hosts
 
+#Redirect both standard output and standard error to a file
 ls /etc/Hosts /etc/hosts &> combined
 
 cat combined
@@ -55,6 +56,3 @@ line 2
 END
 
 cat story.txt
-
-
-
