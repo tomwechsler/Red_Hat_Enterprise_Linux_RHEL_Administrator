@@ -2,6 +2,7 @@
 
 sudo -i
 
+#Tracking the time synchronization status
 chronyc tracking
 
 #Nothing happens
