@@ -31,3 +31,11 @@ The most important move commands are:
  gg moves the cursor to the beginning of the file  
  H moves the cursor to the top of the screen  
  L moves the cursor to the bottom of the screen  
+
+**Substitute:**  
+
+:s/foo/bar/ (replaces first occurrence)
+
+:s/foo/bar/g (replace all occurrences)
+
+:%s/foo/bar/g (search and replace the pattern in the entire file)
