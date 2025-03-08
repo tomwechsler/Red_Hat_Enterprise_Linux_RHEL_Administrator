@@ -12,13 +12,17 @@ man shutdown
 #We need privileges
 shutdown -h +20 "by by folks" 
 
+#Repeat the last command with superuser privileges
 sudo !!
 
+#Cancel any scheduled shutdown
 sudo shutdown -c
 
-sudo shutdown -r 17:00 "System going down at 5 pm" 
+#Schedule a system reboot at 17:00 with a message
+sudo shutdown -r 17:00 "System going down at 5 pm"
 
-sudo shutdown -c 
+#Cancel any scheduled shutdown
+sudo shutdown -c
 
 #But does it really works?
 sudo shutdown -h +1
