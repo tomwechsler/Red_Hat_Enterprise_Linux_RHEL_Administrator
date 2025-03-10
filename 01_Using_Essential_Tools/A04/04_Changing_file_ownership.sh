@@ -36,8 +36,11 @@ ls -l file1
 #This set's user and group vagrant
 sudo chown vagrant: file1
 
+#List detailed information about 'file1' to verify the ownership change
 ls -l file1
 
+#This set's root as the group
 sudo chgrp root file1
 
+#List detailed information about 'file1' to verify the group change
 ls -l file1
