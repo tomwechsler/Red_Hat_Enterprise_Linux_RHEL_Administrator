@@ -26,4 +26,3 @@ sudo ip addr add 172.16.1.1/16 dev eth1
 
 #Ahows only the IPv4 address assigned to the eth1 network interface using the shorthand option.
 ip -4 a s eth1
-
