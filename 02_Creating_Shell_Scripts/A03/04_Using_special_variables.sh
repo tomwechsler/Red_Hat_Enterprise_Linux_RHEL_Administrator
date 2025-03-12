@@ -9,8 +9,8 @@ stat !$
 vim bin/my.sh 
 
 #!/bin/bash
-echo "the programm is $0 it has $# args"
-echo "the programm is $(basename $0) it has $# args"
+echo "the programm is $0 it has $# args" #The name (with the path) of the script and the number of arguments
+echo "the programm is $(basename $0) it has $# args" #The name of the script and the number of arguments
 ps -f -p $1
 
 #Save and exit

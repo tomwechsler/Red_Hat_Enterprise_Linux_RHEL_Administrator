@@ -1,5 +1,6 @@
 #Working on alma
 
+#Install vim and bash-completion
 sudo yum install -y vim-enhanced bash-completion
 
 pwd
@@ -13,6 +14,8 @@ set bg=dark
 
 #The color has changed
 vim .vimrc
+
+#Add the following line to the .vimrc file
 abbr _sh #!/bin/bash
 
 #Save and exit
