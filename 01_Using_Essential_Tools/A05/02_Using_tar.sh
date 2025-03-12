@@ -10,10 +10,10 @@ sudo tar -cf etc.tar /etc
 ls -lh etc.tar
 
 #List the contents of the etc.tar file
-tar -tf etc.tar
+sudo tar -tf etc.tar
 
 #Extract the contents of the etc.tar file
-tar -xf etc.tar
+sudo tar -xf etc.tar
 
 #Change the current directory to etc
 cd etc
