@@ -78,5 +78,3 @@ pwd
 cd mkt 2>/dev/null || { mkdir mkt && cd mkt; }
 
 pwd
-
-
