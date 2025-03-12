@@ -66,12 +66,15 @@ cd mkt 2>/dev/null || { mkdir mkt && cd mkt; }
 
 cd
 
+#Remove the directory named 'mkt' and its contents
 rm -r mkt
 
+#Group them together
 cd mkt 2>/dev/null || { mkdir mkt && cd mkt; }
 
 pwd
 
+#Run again
 cd mkt 2>/dev/null || { mkdir mkt && cd mkt; }
 
 pwd

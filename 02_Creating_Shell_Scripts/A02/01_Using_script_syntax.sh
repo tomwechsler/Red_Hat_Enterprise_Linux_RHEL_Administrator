@@ -1,12 +1,15 @@
 #Working on alma
 
+#Type shows the type of a command
 type for
 
+#The for loop is used to iterate over a list of items
 for message in salut ciao
 do
 echo $message
 done
 
+#The for loop can be written on one line
 for m in hi salut ciao ; do echo $m; done
 
 #A practical example
