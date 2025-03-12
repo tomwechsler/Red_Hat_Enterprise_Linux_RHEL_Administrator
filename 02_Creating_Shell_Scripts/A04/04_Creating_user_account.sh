@@ -1,4 +1,4 @@
-#Working on alma
+#Working on rocky
 
 #Shell shortcut
 !v

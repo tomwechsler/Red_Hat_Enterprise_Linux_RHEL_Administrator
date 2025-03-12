@@ -1,4 +1,4 @@
-#Working on alma
+#Working on rocky
 
 #Shell shortcut
 !v
@@ -14,19 +14,21 @@ fi
 #sudo useradd -m "$1"
 #echo "$USER_PASSWORD" | sudo passwd --stdin "$1"
 #getent passwd "$1"
-for u in "$*"
+for u in "$*" #We use the * wildcard to get all the arguments
 do
   echo "User $u"
 done
-for u in "$@"
+for u in "$@" #We use the @ wildcard to get all the arguments as an array
 do
   echo "User $u"
 done
 
 #Save and exit
 
+#We run the script with some arguments
 createuser.sh u1 u2 u3
 
+#We run the script with some arguments
 createuser.sh "u1 u2" u3
 
 #We remove the lines and hashtags we just made

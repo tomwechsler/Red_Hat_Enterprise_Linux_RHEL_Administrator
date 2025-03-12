@@ -1,4 +1,4 @@
-#Working on alma
+#Working on rocky
 
 #Shell shortcut
 !v
@@ -14,9 +14,8 @@ read -s -p "Enter a new password for the user $1: " USER_PASSWORD
 
 #Save and exit
 
+#Run the createuser.sh script with the argument 'fred'
 createuser.sh fred
 
 #In this case it will not read the password
 createuser.sh fred P@ssw0rd
-
-

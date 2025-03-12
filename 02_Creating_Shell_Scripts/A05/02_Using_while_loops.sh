@@ -1,4 +1,4 @@
-#Working on alma
+#Working on rocky
 
 #We use an empty password
 createuser.sh u99
@@ -15,7 +15,7 @@ elif getent passwd "$1" ; then
   echo "The user $1 already is on the system"
   exit 2
 fi
-while ! [ -n "$USER_PASSWORD" ]
+while ! [ -n "$USER_PASSWORD" ] #While the password is not empty
 do
  read -s -p "Enter a new password for the user $1: " USER_PASSWORD 
 done

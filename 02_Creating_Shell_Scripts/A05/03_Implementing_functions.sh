@@ -1,4 +1,4 @@
-#Working on alma
+#Working on rocky
 
 #Shell shortcut
 !v
@@ -16,7 +16,7 @@ create_user () {
 }
 
 set_password () {
-  while ! [ -n "$USER_PASSWORD" ]
+  while ! [ -n "$USER_PASSWORD" ] #While the password is not empty
   do
     read -s -p "Enter a password for the new user $1: " USER_PASSWORD
   done

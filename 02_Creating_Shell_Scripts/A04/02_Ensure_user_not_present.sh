@@ -1,4 +1,4 @@
-#Working on alma
+#Working on rocky
 
 vim bin/createuser.sh
 
@@ -12,14 +12,20 @@ fi
 
 #Save and exit
 
+#Run the createuser.sh script with the argument 'fred'
 createuser.sh fred
 
+#Display the exit status of the last command
 echo $?
 
+#Run the createuser.sh script with the argument 'vagrant'
 createuser.sh vagrant
 
+#Display the exit status of the last command
 echo $?
 
+#Run the createuser.sh script without arguments
 createuser.sh
 
+#Display the exit status of the last command
 echo $?
