@@ -23,7 +23,7 @@ man 5 crontab
 crontab -e
 
 #Install the 'nano' text editor
-sudo install -y nano
+sudo dnf install -y nano
 
 #Edit the current user's crontab file using the 'nano' editor
 EDITOR=nano crontab -e
