@@ -35,4 +35,5 @@ losetup
 #Detach all loop devices
 sudo losetup -D
 
+#Show all loop devices
 losetup

@@ -30,4 +30,3 @@ sudo tail -n0 -f /var/log/messages
 
 #Exit on the second terminal
 exit
-

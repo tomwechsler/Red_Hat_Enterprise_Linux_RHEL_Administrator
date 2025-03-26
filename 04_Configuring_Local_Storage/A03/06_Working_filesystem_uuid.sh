@@ -4,6 +4,7 @@ sudo mkfs.xfs -L "DATA" /dev/loop1p1
 #Mount the filesystem with the label DATA to the /mnt directory
 sudo mount LABEL=DATA /mnt
 
+#Show all mounted xfs filesystems
 mount -t XFS
 
 #Unmount the filesystem from the /mnt directory

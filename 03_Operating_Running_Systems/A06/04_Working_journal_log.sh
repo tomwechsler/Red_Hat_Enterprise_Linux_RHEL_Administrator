@@ -3,10 +3,13 @@
 #Investigate journalctl
 sudo journalctl
 
+#List the logs from the last 5 entries
 sudo journalctl -n5
 
+#List the log from yesterday
 sudo journalctl --since yesterday
 
+#List the logs from the last 6 hours for the sshd service
 sudo journalctl --since -6h --unit sshd
 
 #The log files (no journal folder - journalctl not persistent)
@@ -35,4 +38,3 @@ sudo journalctl -b 0
 
 #If we would have more files
 sudo journalctl -b -1
-

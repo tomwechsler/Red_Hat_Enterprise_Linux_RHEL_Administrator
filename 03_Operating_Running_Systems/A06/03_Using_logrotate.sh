@@ -47,6 +47,3 @@ ls -l /var/log/my*
 
 #The man pages (entry for copyandtruncate)
 man 5 logrotate.conf
-
-
-

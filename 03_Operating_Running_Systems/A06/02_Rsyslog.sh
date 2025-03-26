@@ -31,6 +31,3 @@ ls /var/log
 
 #The messages log file
 sudo tail /var/log/messages
-
-
-
