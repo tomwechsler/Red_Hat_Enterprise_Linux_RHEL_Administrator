@@ -31,3 +31,6 @@ dnf update --sec-severity Important
 
 #List the transaction history of DNF
 dnf history list
+
+#Update all packages except the kernel
+dnf update -x kernel*

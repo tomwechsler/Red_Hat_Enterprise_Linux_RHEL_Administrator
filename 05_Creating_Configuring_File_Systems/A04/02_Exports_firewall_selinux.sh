@@ -7,6 +7,7 @@ systemctl status nfs-server
 systemctl stop nfs-server
 
 #Open the /etc/exports.d/my.exports file in the vim editor to edit NFS exports
+#If the NFS Version 3 is diabled you have to set config as follows /my/data 192.168.122.0/24(rw)
 vim /etc/exports.d/my.exports
 /my/data	192.168.56.*(rw)
 /my/files	192.168.56.*(rw,no_root_squash)
