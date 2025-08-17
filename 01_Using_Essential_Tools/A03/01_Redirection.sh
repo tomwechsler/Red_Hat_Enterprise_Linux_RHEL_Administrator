@@ -18,7 +18,7 @@ ls
 # Display the type of the file 'file1'
 file file1
 
-# Print the string 'hello' to the terminal
+#Print the string 'hello' to the terminal
 echo hello
 
 #Content is overwritten
