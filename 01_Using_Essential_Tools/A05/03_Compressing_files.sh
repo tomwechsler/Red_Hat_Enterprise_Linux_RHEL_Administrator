@@ -1,5 +1,13 @@
 #Working on the rhel system
 
+#gzip / gunzip
+#bzip2 / bunzip2
+#xz -z / xz -d (unxz)
+
+#tar -czf (gzip)
+#tar -cjf (bzip2)
+#tar -cJf (xz)
+
 #Print the current working directory
 pwd
 
