@@ -12,7 +12,7 @@ elif getent passwd "$1" ; then
 fi
 read -s -p "Enter a new password for the user $1: " USER_PASSWORD
 sudo useradd -m "$1"
-echo "$USER_PASSWORD" | sudo passwd --stdin "$1"
+echo "$USER_PASSWORD" | sudo passwd --stdin "$1" #For All Linux Distros echo "$1:$USER_PASSWORD" | sudo chpasswd
 getent passwd "$1"
 
 #Save and exit

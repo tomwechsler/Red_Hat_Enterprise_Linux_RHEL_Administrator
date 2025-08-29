@@ -3,6 +3,7 @@
 #We use an empty password
 createuser.sh u99
 
+#Remove the new created user
 sudo userdel -r u99
 
 #Shell shortcut
@@ -28,7 +29,5 @@ getent passwd "$1"
 #Try first without a password
 createuser.sh u99
 
+#Remove the new created user
 sudo userdel -r u99
-
-
-

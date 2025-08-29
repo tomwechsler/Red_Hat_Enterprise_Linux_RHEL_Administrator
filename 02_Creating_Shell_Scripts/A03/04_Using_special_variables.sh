@@ -1,5 +1,23 @@
 #Working on alma
 
+#Special variables
+
+# $$ - Outputs the process ID (PID) of the current shell process.
+
+# $? - Displays the exit status of the last command executed (0 = successful).
+
+# !$ - Returns the last argument of the previous command.
+
+# $0 - Contains the name of the script or command that was called.
+
+# $1 - The first argument that was passed to a script (analogous: $2, $3, ...).
+
+# $# - Displays the number of arguments that were passed.
+
+# $* - Returns all arguments as a single string.
+
+# $@ - Returns all arguments as separate words (as if individually enclosed in quotation marks) - important for loops.
+
 echo $0 
 
 ls /etc/hosts 

@@ -1,7 +1,7 @@
 #Working on rocky
 
 vim bin/createuser.sh
-
+#!/bin/bash
 if [ "$#" -lt 1 ] ; then
   echo "You must provide a username: $0 <username>"
   exit 1
