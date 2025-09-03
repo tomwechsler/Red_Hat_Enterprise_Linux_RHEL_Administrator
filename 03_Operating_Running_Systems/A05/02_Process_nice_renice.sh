@@ -39,6 +39,8 @@ ps -lp $(pgrep sleep)
 #Terminate the sleep process
 pkill sleep
 
+#The nice value can range from -20 to 19
+
 #Start a background process with a nice value of 12
 nice -n 12 sleep 1000&
 
