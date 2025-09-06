@@ -4,19 +4,19 @@
 ls -l /var/log/my.log
 
 #Create a log entry
-logger -p local1.warn "test message"
+logger -p local0.warn "test message"
 
 #Our log file
 ls -l /var/log/my.log
 
 #Create a log entry
-logger -p local1.warn "test message"
+logger -p local0.warn "test message"
 
 #Our log file
 ls -l /var/log/my.log
 
 #Create a log entry
-logger -p local1.warn "test message"
+logger -p local0.warn "test message"
 
 #The logrotate.d directory
 sudo vim /etc/logrotate.d/TABTAB
@@ -27,7 +27,6 @@ sudo vim /etc/logrotate.d/my
 
 /var/log/my.log 
 {
-
  weekly
  rotate 4
  dateext

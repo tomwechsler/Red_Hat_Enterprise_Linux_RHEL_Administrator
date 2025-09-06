@@ -16,13 +16,13 @@ sudo journalctl --since -6h --unit sshd
 ls /var/log
 
 #Check the config file
-sudo grep Storage /etc/systemd/journald.conf 
+sudo grep Storage /usr/lib/systemd/journald.conf 
 
 #Change the settings
-sudo sed -i 's/#Storage=auto/Storage=persistent/' /etc/systemd/journald.conf
+sudo sed -i 's/#Storage=auto/Storage=persistent/' /usr/lib/systemd/journald.conf
 
 #Check the config file
-sudo grep Storage /etc/systemd/journald.conf
+sudo grep Storage /usr/lib/systemd/journald.conf
 
 #Restart the service
 sudo systemctl restart systemd-journald
