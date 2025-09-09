@@ -18,6 +18,9 @@ cd /admin
 #Exit the current shell session (log out from the 'tux' user)
 exit
 
+#Change the current directory to /admin
+cd /admin
+
 #List the files and directories in the current directory with detailed information
 ls -l
 

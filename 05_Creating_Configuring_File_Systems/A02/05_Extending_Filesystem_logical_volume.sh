@@ -10,13 +10,13 @@ vgs
 df -h /
 
 #Extend the volume group 'rhel' by adding the physical volume /dev/sdc
-vgeextend rhel /dev/sdc
+vgeextend rl_rocky01 /dev/vdc
 
 #Display information about the 'rhel' volume group
-vgs rhel
+vgs rl_rocky01
 
 #Extend the logical volume 'root' in the 'rhel' volume group to use all free space and resize the filesystem
-lvextend -r -l +100%FREE rhel/root
+lvextend -r -l +100%FREE rl_rocky01/root
 
 #Display disk usage in human-readable format for all mounted filesystems to verify the extension
 df -h /
