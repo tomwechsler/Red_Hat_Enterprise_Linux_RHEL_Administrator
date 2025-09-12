@@ -32,6 +32,12 @@ touch file24
 
 cd
 
+#Change group ownership of the /my/data and /my/files directories to the wheel group
+chown :wheel /my/data /my/files
+
+#Change permissions of the /my/data and /my/files directories to 770
+chmod 770 -Rv /my/data /my/files
+
 #Configure SELinux
 ls -ldZ /my/data /my/files
 
