@@ -1,7 +1,7 @@
 #Working on the rhel system
 
 #Install the VDO package
-sudo dnf install -y vdo kmod-kvdo lvm2
+sudo dnf install -y vdo lvm2
 
 #Load the VDO module
 sudo modprobe kvdo
