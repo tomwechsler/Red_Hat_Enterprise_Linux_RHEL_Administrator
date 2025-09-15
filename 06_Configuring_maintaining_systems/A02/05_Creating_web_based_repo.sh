@@ -13,6 +13,7 @@ rm /etc/yum.repos.d/mnt_*
 
 #Mount the CD-ROM to the /var/www/html directory
 mount /dev/cdrom /var/www/html
+mount -o loop /home/tom/rhel10.iso /var/www/html
 
 #Start the Apache HTTP server
 systemctl start httpd

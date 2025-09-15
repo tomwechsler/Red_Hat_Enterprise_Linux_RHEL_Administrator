@@ -15,6 +15,8 @@ lsblk
 #Mount the device /dev/sr0 to the /mnt directory
 mount /dev/sr0 /mnt
 
+sudo mount -o loop rhel10.iso /mnt
+
 #List the contents of the /mnt directory
 ls /mnt
 
