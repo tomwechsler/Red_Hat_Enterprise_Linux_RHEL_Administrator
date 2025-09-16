@@ -1,4 +1,4 @@
-#Working on the redhat system
+#Working on the redhat system (on rhel 10 there are no modules any more)
 
 sudo -i
 

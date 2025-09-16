@@ -27,7 +27,7 @@ systemctl restart chronyd && watch chronyc tracking
 chrony sources
 
 #Display verbose information about the sources used by chronyd
-chronyc source -v
+chronyc sources -v
 
 #Start the chronyc command-line interface
 chronyc

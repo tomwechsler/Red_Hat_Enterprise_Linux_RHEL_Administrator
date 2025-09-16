@@ -20,7 +20,7 @@ sudo vgcreate myvg /dev/sdb1
 
 #Create a VDO drive
 #Replace 100G with the desired logical size of the VDO drive
-sudo lvcreate --type vdo -L 20G -n mylv myvg
+sudo lvcreate --type vdo -L 20G -V 100G -n mylv myvg
 
 #Format the VDO drive with a file system of your choice (e.g. xfs)
 sudo mkfs.xfs -K /dev/myvg/mylv
