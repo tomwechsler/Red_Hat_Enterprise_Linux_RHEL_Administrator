@@ -7,7 +7,7 @@ sudo nmcli device
 sudo nmcli connection
 
 #Add a new connection
-sudo nmcli connection add type ethernet ifname eth1 ipv4.method manual ipv4.addresses 192.168.100.1/24 connection.id athome
+sudo nmcli connection add type ethernet ifname enp8s0 ipv4.method manual ipv4.addresses 192.168.100.1/24 connection.id athome
 
 #List the nmcli connection
 sudo nmcli connection
