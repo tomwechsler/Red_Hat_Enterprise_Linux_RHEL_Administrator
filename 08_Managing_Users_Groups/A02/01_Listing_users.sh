@@ -19,7 +19,7 @@ getent passwd
 getent passwd vagrant
 
 #Get the username and user ID fields from the passwd database
-getent passwd | cut -d ":" -f 1,3
+getent passwd | cut -d ":" -f 1,3 | grep vagrant
 
 #Search for 'vagrant' in the passwd file and print the username and user ID
 awk -F: '/vagrant/{ print $1 ":" $3 }' /etc/passwd
