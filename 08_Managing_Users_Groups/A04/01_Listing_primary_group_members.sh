@@ -13,13 +13,13 @@ grep vagrant /etc/group
 grep users /etc/group
 
 #Add a new user named 'joe' with 'users' as the primary group (-g) and no user group (-n)
-sudo useradd -n -g users joe
+sudo useradd -N -g users joe
 
 #Add a new user named 'mary' with 'users' as the primary group (-g) and no user group (-n)
-sudo useradd -n -g users mary
+sudo useradd -N -g users mary
 
 #Add a new user named 'saly' with 'users' as the primary group (-g) and no user group (-n)
-sudo useradd -n -g users saly
+sudo useradd -N -g users saly
 
 #Search for 'users' in the group file after adding new users
 grep users /etc/group
