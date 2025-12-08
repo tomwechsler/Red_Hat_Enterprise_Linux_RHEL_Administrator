@@ -12,19 +12,19 @@ sudo gpasswd ops
 #Run a command with the group ID of 'ops' after setting the password
 newgrp ops
 
-#Print the user identifier, group identifier, and groups for 'vagrant'
-id vagrant
+#Print the user identifier, group identifier, and groups for 'tom'
+id tom
 
 #With the group password set, the group changes to a self-service model
 
-#Add 'vagrant' user to 'ops' group with root privileges
-sudo gpasswd -a vagrant ops
+#Add 'tom' user to 'ops' group with root privileges
+sudo gpasswd -a tom ops
 
-#Set 'vagrant' user as an administrator of 'ops' group with root privileges
-sudo gpasswd -A vagrant ops
+#Set 'tom' user as an administrator of 'ops' group with root privileges
+sudo gpasswd -A tom ops
 
-#Add 'user1' to 'ops' group
-gpasswd -a user1 ops
+#Add 'joe' to 'ops' group
+gpasswd -a joe ops
 
 #Get the 'ops' group entry from the group database
 getent group ops
