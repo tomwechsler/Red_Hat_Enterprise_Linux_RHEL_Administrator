@@ -9,6 +9,9 @@ mkdir /staff
 #List the '/staff' directory with its security context
 ls -ldZ /staff
 
+#Add the context type 'home_root_t' into the SELinux policy
+semanage fcontext -a -t home_root_t "/staff"
+
 #Add a new file context for '/staff' directory that equals to '/home' directory using semanage
 semanage fcontext -a -e /home /staff
 
