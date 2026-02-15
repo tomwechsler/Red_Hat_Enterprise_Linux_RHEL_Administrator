@@ -7,7 +7,7 @@ sudo dnf install -y w3m
 podman image search apache2
 
 #Display detailed information about the 'ubuntu:apache2' image from Docker Hub using Skopeo
-skopeo inspect docker://docker.io/ubuntu:apache2 #At the bottom see the Timezone
+skopeo inspect docker://docker.io/ubuntu/apache2 #At the bottom see the Timezone
 
 #Pull the 'ubuntu/apache2' image from Docker Hub
 podman image pull docker.io/ubuntu/apache2
