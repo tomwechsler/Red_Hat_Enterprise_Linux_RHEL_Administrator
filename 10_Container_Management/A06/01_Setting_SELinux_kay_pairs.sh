@@ -18,11 +18,11 @@ cd project/fedora
 #Copy the public SSH key to the current directory
 cp ~/.ssh/id_rsa.pub .
 
-#Create a file named 'tom' with the content 'tom ALL=(root) NOPASSWD: ALL'
-echo 'tom ALL=(root) NOPASSWD: ALL' > tom
+#Create a file named 'vagrant' with the content 'vagrant ALL=(root) NOPASSWD: ALL'
+echo 'vagrant ALL=(root) NOPASSWD: ALL' > vagrant
 
-#Check the syntax of the 'tom' file with 'visudo'
-visudo -cf tom
+#Check the syntax of the 'vagrant' file with 'visudo'
+visudo -cf vagrant
 
 #List the contents of the current directory with their details
 ls -l
