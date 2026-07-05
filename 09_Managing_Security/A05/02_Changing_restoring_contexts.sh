@@ -1,4 +1,4 @@
-#Working on alma (with two register vagarnt/root)
+#Working on alma (with two register vagrant/root)
 
 #Display the user identity (root)
 id
