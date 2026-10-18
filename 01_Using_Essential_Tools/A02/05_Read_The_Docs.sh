@@ -28,6 +28,9 @@ man -k passwd | grep 1
 #Use the option -a to search all sections
 man -a passwd
 
+#The info pages
+info passwd
+
 #On an RHEL system install command-line-assistant
 sudo dnf install command-line-assistant
 
