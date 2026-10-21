@@ -26,3 +26,9 @@ sudo grep -vE '^(#|$)' /etc/ssh/sshd_config
 
 #Count the number of lines that do not start with '#' or are not empty in the /etc/ssh/sshd_config file with superuser privileges
 sudo grep -vE '^(#|$)' /etc/ssh/sshd_config | wc -l
+
+#Search for lines containing 'PermitRootLogin' in the /etc/ssh/sshd_config file with superuser privileges
+sudo grep PermitRootLogin /etc/ssh/sshd_config
+
+#Search for lines starting with 'PermitRootLogin' in the /etc/ssh/sshd_config file with superuser privileges
+sudo grep ^PermitRootLogin /etc/ssh/sshd_config
